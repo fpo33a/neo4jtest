@@ -3,11 +3,11 @@
  *
  * Purpose is to test some functionalities of the NOSQL Neo4j database
  *
- * Tests done with 'neo4j-community_windows_2_0_0.exe' coming from "http://www.neo4j.org"
- * (requires Java 7)
+ * Tests done with 'neo4j-3.1.1' coming from "http://www.neo4j.org"
+ * (using Java 8)
  *
- * Content of DB can be visualised using web GUI of neo4j, by browsing at adress http://localhost:7474/browser/ once 'neo4j.bat (from bin directory) is running
- * (configuration to go on right db path is in conf/neo4j-server.properties ( org.neo4j.server.database.location=<your dir> )
+ * this generates a demo.dot file containing a textual version of the graph
+ * to convert it in png do "dot -tpng -O demo.dot". This "dot" program comes with graphviz software ( graphviz-2.38.zip )
  *
  */
 package com.test;
