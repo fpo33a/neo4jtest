@@ -1,0 +1,68 @@
+digraph Neo {
+  node [
+    fontsize = "8"
+    shape = "Mrecord"
+    fontname = "Bitstream Vera Sans"
+  ]
+  edge [
+    fontname = "Bitstream Vera Sans"
+    fontsize = "8"
+  ]
+  N0 [
+    label = "{Node\[0\]: Person, Boy|'id' = 1 : int\l'name' = 'Frank' : String\l}"
+  ]
+  N0 -> N5 [
+    label = "IS_HUSBAND_OF\n'since' = '1994' : String\l"
+  ]
+  N0 -> N4 [
+    label = "IS_FATHER_OF\n'since' = '2003' : String\l"
+  ]
+  N0 -> N3 [
+    label = "IS_FATHER_OF\n'since' = '1996' : String\l"
+  ]
+  N0 -> N2 [
+    label = "IS_SON_OF\n'since' = '1970' : String\l"
+  ]
+  N1 [
+    label = "{Node\[1\]: Person, Boy|'id' = 2 : int\l'name' = 'Philippe' : String\l}"
+  ]
+  N1 -> N2 [
+    label = "IS_SON_OF\n'since' = '1969' : String\l"
+  ]
+  N2 [
+    label = "{Node\[2\]: Person, Boy|'id' = 3 : int\l'name' = 'Michel' : String\l}"
+  ]
+  N2 -> N6 [
+    label = "IS_HUSBAND_OF\n'since' = '1966' : String\l"
+  ]
+  N2 -> N1 [
+    label = "IS_FATHER_OF\n'since' = '1969' : String\l"
+  ]
+  N2 -> N0 [
+    label = "IS_FATHER_OF\n'since' = '1970' : String\l"
+  ]
+  N3 [
+    label = "{Node\[3\]: Person, Boy|'id' = 4 : int\l'name' = 'Corentin' : String\l}"
+  ]
+  N3 -> N0 [
+    label = "IS_SON_OF\n'since' = '1996' : String\l"
+  ]
+  N4 [
+    label = "{Node\[4\]: Person, Boy|'id' = 5 : int\l'name' = 'Romain' : String\l}"
+  ]
+  N4 -> N0 [
+    label = "IS_SON_OF\n'since' = '2003' : String\l"
+  ]
+  N5 [
+    label = "{Node\[5\]: Person, Girl|'id' = 6 : int\l'name' = 'Véronique' : String\l}"
+  ]
+  N5 -> N0 [
+    label = "IS_WIFE_OF\n'since' = '1994' : String\l"
+  ]
+  N6 [
+    label = "{Node\[6\]: Person, Girl|'id' = 7 : int\l'name' = 'Elisabeth' : String\l}"
+  ]
+  N6 -> N2 [
+    label = "IS_WIFE_OF\n'since' = '1966' : String\l"
+  ]
+}
